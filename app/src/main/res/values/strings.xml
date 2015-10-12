@@ -104,31 +104,37 @@ In 1997, Ms. Bibiana Gutierrez was 47 years old when she got a cancer on her rig
         <item>Lily Tolentino</item>
         <item>Bibiana Gutierrez</item>
     </string-array>
-    <string name="title_activity_norie">norie</string>
-    <string name="title_activity_placida">placida</string>
-    <string name="title_activity_marivic">marivic</string>
-    <string name="title_activity_rosalie">rosalie</string>
-    <string name="title_activity_bernardita">bernardita</string>
-    <string name="title_activity_rosalisa">rosalisa</string>
-    <string name="title_activity_ma_cristina">ma_cristina</string>
-    <string name="title_activity_marcelina">marcelina</string>
-    <string name="title_activity_juanita">juanita</string>
-    <string name="title_activity_helen">helen</string>
-    <string name="title_activity_annaliza">annaliza</string>
-    <string name="title_activity_teresita">teresita</string>
-    <string name="title_activity_anna">anna</string>
-    <string name="title_activity_ma_victoria">ma_victoria</string>
-    <string name="title_activity_patria">patria</string>
-    <string name="title_activity_julie">julie</string>
-    <string name="title_activity_theodora">theodora</string>
-    <string name="title_activity_concepcion">concepcion</string>
-    <string name="title_activity_ma_ascuncion">ma_ascuncion</string>
-    <string name="title_activity_jane">jane</string>
-    <string name="title_activity_ana">ana</string>
-    <string name="title_activity_mercy">mercy</string>
-    <string name="title_activity_richilda">richilda</string>
-    <string name="title_activity_lily">lily</string>
-    <string name="title_activity_bibiana">bibiana</string>
+    <string name="title_activity_norie">Norie</string>
+    <string name="title_activity_placida">Placida</string>
+    <string name="title_activity_marivic">Marivic</string>
+    <string name="title_activity_rosalie">Rosalie</string>
+    <string name="title_activity_bernardita">Bernardita</string>
+    <string name="title_activity_rosalisa">Rosalisa</string>
+    <string name="title_activity_ma_cristina">Ma. Cristina</string>
+    <string name="title_activity_marcelina">Marcelina</string>
+    <string name="title_activity_juanita">Juanita</string>
+    <string name="title_activity_helen">Helen</string>
+    <string name="title_activity_annaliza">Annaliza</string>
+    <string name="title_activity_teresita">Teresita</string>
+    <string name="title_activity_anna">Anna</string>
+    <string name="title_activity_ma_victoria">Ma. Victoria</string>
+    <string name="title_activity_patria">Patria</string>
+    <string name="title_activity_julie">Julie</string>
+    <string name="title_activity_theodora">Theodora</string>
+    <string name="title_activity_concepcion">Concepcion</string>
+    <string name="title_activity_ma_ascuncion">Ma. Asuncion</string>
+    <string name="title_activity_jane">Jane</string>
+    <string name="title_activity_ana">Ana</string>
+    <string name="title_activity_mercy">Mercy</string>
+    <string name="title_activity_richilda">Richilda</string>
+    <string name="title_activity_lily">Lily</string>
+    <string name="title_activity_bibiana">Bibiana</string>
+    <string name="title_activity_help">Help</string>
+
+    <string name="help"><b>About:</b>\nThis app was created for the sole purpose of educating people about Breast Cancer.\n\n
+    <b>Instructions:</b>\nJust tap on any category that interests you and the app will do all the work for you.\n\n
+    <b>Features:</b>\n\tInfo: Facts, Treatments\n\tNews: Articles about Breast Cancer\n\tTestimonies: Compilation of stories of people with\n\tBreast Cancer Experience\n\n
+    <b>Support Information:</b>\n GoPink! is developed by ZLG.\n\tzion_chan@dlsu.edu.ph\n\tlaureen_garcia@dlsu.edu.ph\n\tglenn_comendador@dlsu.edu.ph</string>
 
 
 </resources>

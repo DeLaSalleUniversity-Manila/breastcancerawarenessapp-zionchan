@@ -152,6 +152,10 @@
             android:name=".bibiana"
             android:label="@string/title_activity_bibiana" >
         </activity>
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help" >
+        </activity>
     </application>
 
 </manifest>
