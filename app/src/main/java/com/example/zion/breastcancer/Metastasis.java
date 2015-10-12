@@ -7,52 +7,50 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
-public class MainActivity extends AppCompatActivity {
+public class Metastasis extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_metastasis);
+        ListView listRM = (ListView) findViewById(R.id.listViewRM);
+        int[] photosRM = {R.drawable.annaliza, R.drawable.teresita, R.drawable.anna, R.drawable.ma_victoria, R.drawable.patria};
+        String[] namesRM = getResources().getStringArray(R.array.namesRM);
+        DataAdapter adapter = new DataAdapter(getApplicationContext(),R.layout.row_layout);
+        listRM.setAdapter(adapter);
 
-        //MAKING OF THE ARRAY
-        String[] classification = getResources().getStringArray(R.array.classification);
-
-        //THE ARRAY ADAPTER
-        ArrayAdapter<String> myAdapter = new
-                ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, classification);
-
-        //CONNECTING LISTVIEW TO THE CODE
-        ListView myList = (ListView) findViewById(R.id.listView);
-        myList.setAdapter(myAdapter);
-
-        //SETTING LISTENERS ON CLICK AND TRANSFERRING TO NEW ACTIVITY
-        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        int i=0;
+        for(String names: namesRM)
+        {
+            DataProvider provide = new DataProvider(photosRM[i],namesRM[i]);
+            adapter.add(provide);
+            i++;
+        }
+        listRM.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent goToEarlyIntervention = new Intent(MainActivity.this, EarlyIntervention.class);
-                        startActivity(goToEarlyIntervention);
+                        Intent goToAnnaliza = new Intent(Metastasis.this, annaliza.class);
+                        startActivity(goToAnnaliza);
                         break;
                     case 1:
-                        Intent goToLivingBreast = new Intent(MainActivity.this, LivingBreast.class);
-                        startActivity(goToLivingBreast);
+                        Intent goToTeresita = new Intent(Metastasis.this, teresita.class);
+                        startActivity(goToTeresita);
                         break;
                     case 2:
-                        Intent goToMetastasis = new Intent(MainActivity.this, Metastasis.class);
-                        startActivity(goToMetastasis);
+                        Intent goToAnna = new Intent(Metastasis.this, anna.class);
+                        startActivity(goToAnna);
                         break;
                     case 3:
-                        Intent goToPrevention = new Intent(MainActivity.this, Prevention.class);
-                        startActivity(goToPrevention);
+                        Intent goToMaVictoria = new Intent(Metastasis.this, ma_victoria.class);
+                        startActivity(goToMaVictoria);
                         break;
                     case 4:
-                        Intent goToSurvivor = new Intent(MainActivity.this, Survivors.class);
-                        startActivity(goToSurvivor);
+                        Intent goToPatria = new Intent(Metastasis.this, patria.class);
+                        startActivity(goToPatria);
                         break;
                 }
             }
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_metastasis, menu);
         return true;
     }
 

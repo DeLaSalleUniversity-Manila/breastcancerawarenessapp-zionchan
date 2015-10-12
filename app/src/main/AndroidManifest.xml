@@ -24,6 +24,134 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.zion.breastcancer.MainActivity" />
         </activity>
+        <activity
+            android:name=".EarlyIntervention"
+            android:label="@string/title_activity_early_intervention"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zion.breastcancer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LivingBreast"
+            android:label="@string/title_activity_living_breast" >
+        </activity>
+        <activity
+            android:name=".Metastasis"
+            android:label="@string/title_activity_metastasis"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.zion.breastcancer.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Prevention"
+            android:label="@string/title_activity_prevention" >
+        </activity>
+        <activity
+            android:name=".Survivors"
+            android:label="@string/title_activity_survivors" >
+        </activity>
+        <activity
+            android:name=".norie"
+            android:label="@string/title_activity_norie" >
+        </activity>
+        <activity
+            android:name=".placida"
+            android:label="@string/title_activity_placida" >
+        </activity>
+        <activity
+            android:name=".marivic"
+            android:label="@string/title_activity_marivic" >
+        </activity>
+        <activity
+            android:name=".rosalie"
+            android:label="@string/title_activity_rosalie" >
+        </activity>
+        <activity
+            android:name=".bernardita"
+            android:label="@string/title_activity_bernardita" >
+        </activity>
+        <activity
+            android:name=".rosalisa"
+            android:label="@string/title_activity_rosalisa" >
+        </activity>
+        <activity
+            android:name=".ma_cristina"
+            android:label="@string/title_activity_ma_cristina" >
+        </activity>
+        <activity
+            android:name=".marcelina"
+            android:label="@string/title_activity_marcelina" >
+        </activity>
+        <activity
+            android:name=".juanita"
+            android:label="@string/title_activity_juanita" >
+        </activity>
+        <activity
+            android:name=".helen"
+            android:label="@string/title_activity_helen" >
+        </activity>
+        <activity
+            android:name=".annaliza"
+            android:label="@string/title_activity_annaliza" >
+        </activity>
+        <activity
+            android:name=".teresita"
+            android:label="@string/title_activity_teresita" >
+        </activity>
+        <activity
+            android:name=".anna"
+            android:label="@string/title_activity_anna" >
+        </activity>
+        <activity
+            android:name=".ma_victoria"
+            android:label="@string/title_activity_ma_victoria" >
+        </activity>
+        <activity
+            android:name=".patria"
+            android:label="@string/title_activity_patria" >
+        </activity>
+        <activity
+            android:name=".julie"
+            android:label="@string/title_activity_julie" >
+        </activity>
+        <activity
+            android:name=".theodora"
+            android:label="@string/title_activity_theodora" >
+        </activity>
+        <activity
+            android:name=".concepcion"
+            android:label="@string/title_activity_concepcion" >
+        </activity>
+        <activity
+            android:name=".ma_ascuncion"
+            android:label="@string/title_activity_ma_ascuncion" >
+        </activity>
+        <activity
+            android:name=".jane"
+            android:label="@string/title_activity_jane" >
+        </activity>
+        <activity
+            android:name=".ana"
+            android:label="@string/title_activity_ana" >
+        </activity>
+        <activity
+            android:name=".mercy"
+            android:label="@string/title_activity_mercy" >
+        </activity>
+        <activity
+            android:name=".richilda"
+            android:label="@string/title_activity_richilda" >
+        </activity>
+        <activity
+            android:name=".lily"
+            android:label="@string/title_activity_lily" >
+        </activity>
+        <activity
+            android:name=".bibiana"
+            android:label="@string/title_activity_bibiana" >
+        </activity>
     </application>
 
 </manifest>

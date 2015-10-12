@@ -7,52 +7,51 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
-public class MainActivity extends AppCompatActivity {
+public class Survivors extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_survivors);
+        ListView listCS = (ListView) findViewById(R.id.listViewCS);
+        int[] photosCS = {R.drawable.ana, R.drawable.mercy, R.drawable.richilda, R.drawable.lily, R.drawable.bibiana};
+        String[] namesCS = getResources().getStringArray(R.array.namesCS);
+        DataAdapter adapter = new DataAdapter(getApplicationContext(),R.layout.row_layout);
+        listCS.setAdapter(adapter);
 
-        //MAKING OF THE ARRAY
-        String[] classification = getResources().getStringArray(R.array.classification);
+        int i=0;
+        for(String names: namesCS)
+        {
+            DataProvider provide = new DataProvider(photosCS[i],namesCS[i]);
+            adapter.add(provide);
+            i++;
+        }
 
-        //THE ARRAY ADAPTER
-        ArrayAdapter<String> myAdapter = new
-                ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, classification);
-
-        //CONNECTING LISTVIEW TO THE CODE
-        ListView myList = (ListView) findViewById(R.id.listView);
-        myList.setAdapter(myAdapter);
-
-        //SETTING LISTENERS ON CLICK AND TRANSFERRING TO NEW ACTIVITY
-        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listCS.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        Intent goToEarlyIntervention = new Intent(MainActivity.this, EarlyIntervention.class);
-                        startActivity(goToEarlyIntervention);
+                        Intent goToAna = new Intent(Survivors.this, ana.class);
+                        startActivity(goToAna);
                         break;
                     case 1:
-                        Intent goToLivingBreast = new Intent(MainActivity.this, LivingBreast.class);
-                        startActivity(goToLivingBreast);
+                        Intent goToMercy = new Intent(Survivors.this, mercy.class);
+                        startActivity(goToMercy);
                         break;
                     case 2:
-                        Intent goToMetastasis = new Intent(MainActivity.this, Metastasis.class);
-                        startActivity(goToMetastasis);
+                        Intent goToRichilda = new Intent(Survivors.this, richilda.class);
+                        startActivity(goToRichilda);
                         break;
                     case 3:
-                        Intent goToPrevention = new Intent(MainActivity.this, Prevention.class);
-                        startActivity(goToPrevention);
+                        Intent goToLily = new Intent(Survivors.this, lily.class);
+                        startActivity(goToLily);
                         break;
                     case 4:
-                        Intent goToSurvivor = new Intent(MainActivity.this, Survivors.class);
-                        startActivity(goToSurvivor);
+                        Intent goToBibiana = new Intent(Survivors.this, bibiana.class);
+                        startActivity(goToBibiana);
                         break;
                 }
             }
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_survivors, menu);
         return true;
     }
 
