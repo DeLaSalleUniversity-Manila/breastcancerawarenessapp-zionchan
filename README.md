@@ -1,4 +1,4 @@
-# breastcancerawarenessapp-zionchan Testimonials Part
+# breastcancerawarenessapp-zionchan Testimonials Part + Help Part
 **Main Activity for the Testimonials section:**
 ![main](device-2015-10-12-181301.png)
 Used basic *ListView* for this part.
@@ -10,3 +10,7 @@ Added a **CustomAdapter** and a **CustomLayout** for my *ListView* in this part.
 **Testimony of the person that the user chose:**
 ![testimony](device-2015-10-12-181544.png)
 Used basic *TextView* with enabled scrolling to compensate if the text exceeds the screen. :+1:
+<br></br>
+**Help Screen:**
+![help](device-2015-10-12-210035.png)
+Used basic *TextView* only. :bowtie:
